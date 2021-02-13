@@ -16,10 +16,11 @@ const (
 // nolint: lll, funlen
 func TestSemverLookup(t *testing.T) {
 	tests := map[string]struct {
+		dependency     string
 		expectedStdout string
 		expectedStderr string
 	}{
-		"First example - make me more descriptive in the future": {"v1.22.1", ""},
+		"First example - make me more descriptive in the future": {"hadolint/hadolint", "v1.22.1", ""},
 	}
 	for name, tc := range tests {
 		tc := tc
